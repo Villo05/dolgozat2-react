@@ -6,8 +6,17 @@ export type Kategoria =
   | "gasztronómia";
 
 /* kell egy interface */
+export type ProgramTipus = {
+  id: number;
+  nev: string;
+  kategoria: Kategoria;
+  datum: string;
+  helyszin: string;
+  ferohely: number;
+  jelentkezettek: number
+}
 
-export const PROGRAMOK= [
+export const PROGRAMOK:ProgramTipus[]=[
   {
     id: 1,
     nev: "Kerámiaműhely",
